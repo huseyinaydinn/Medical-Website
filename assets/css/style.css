@@ -1,5 +1,6 @@
 /* Ubuntu Font from Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/darkline");
 
 * {
   margin: 0;
@@ -13,6 +14,9 @@
   --main-color: #79abc3;
   --secondary-color: #4084b8;
   --hover-color: #284c64;
+  --services-bg-color: #f9f6f6;
+  --team-button-color: #6fa5c1;
+  --about-bg-color: #f9f6f6;
 }
 
 a {
@@ -24,16 +28,16 @@ ul {
   list-style: none;
 }
 
-/* Css Start */
-
-/* Header - Navbar CSS */
-
 .page-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Css Start */
+
+/* Header - Navbar CSS */
 
 .fixed-header {
   display: flex;
@@ -91,7 +95,7 @@ ul {
 }
 
 .navbar-nav {
-  gap: 30px;
+  gap: 1.5rem;
 }
 #navbarSupportedContent {
   display: flex;
@@ -103,9 +107,9 @@ ul {
 #navbarSupportedContent .vertical-line {
   border-left: 2px solid var(--text-color);
   height: 30px;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
-.collapse:not(.show) {
+.navbar-collapse:not(.show) {
   display: none !important;
 }
 
@@ -161,31 +165,31 @@ ul {
   padding: 0;
 }
 
-.dropdown-menu li:first-child a {
+.dropdown-menu ul li:first-child a {
   font-weight: bold;
   color: var(--hover-color) !important;
   text-align: center;
 }
 
-.dropdown-menu li {
+.dropdown-menu ul li {
   text-align: left;
 }
 
-.dropdown-menu li .dropdown-item {
+.dropdown-menu ul li .dropdown-item {
   display: flex;
   align-items: center;
 }
 
-.dropdown-menu li a {
+.dropdown-menu ul li a {
   color: #fff !important;
   font-size: 1rem;
 }
 
-.dropdown-menu li i {
+.dropdown-menu ul li i {
   color: #fff;
 }
 
-.dropdown-menu li i::before {
+.dropdown-menu ul li i::before {
   font-size: 1.5rem;
 }
 
@@ -199,6 +203,7 @@ ul {
   width: 100%;
   height: 100vh;
   position: relative;
+  background-color: #fff;
 }
 
 .home-items .carousel-inner .carousel-item img {
@@ -206,7 +211,7 @@ ul {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  max-height: 90vh;
+  padding-bottom: 4rem;
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
 }
@@ -217,34 +222,33 @@ ul {
   height: 100vh;
 }
 
-.carousel-item {
+.home-items .carousel-inner .carousel-item {
   width: 100%;
   height: 100vh;
 }
 
-.carousel-inner {
+.home-items .carousel-inner {
   position: relative;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.home-items .carousel-control-prev-icon,
+.home-items .carousel-control-next-icon {
   position: absolute;
-  background-color: var(--hover-color);
 }
 
-.carousel-control-next-icon {
+.home-items .carousel-control-next-icon {
   right: 40px;
 }
 
-.carousel-control-prev-icon {
+.home-items .carousel-control-prev-icon {
   left: 40px;
 }
 
 .home-description {
   position: absolute;
-  width: 80vw;
-  height: 30vh;
-  padding: 10px;
+  width: 70%;
+  height: auto;
+  padding: 1rem;
   bottom: -70px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -254,7 +258,6 @@ ul {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -268,24 +271,202 @@ ul {
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  .carousel-item .home-description {
-    width: 90vw;
-    padding: 0;
-  }
+/* Our Services Section CSS Start */
 
-  .carousel-item .home-description h1 {
-    font-size: 0.5rem;
-  }
+.services-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 5rem;
+  margin-top: 4rem;
+  background-color: var(--services-bg-color);
+}
 
-  .carousel-item .home-description p {
-    font-size: 0.3rem;
-  }
+.services-container .title-wrapper h3 {
+  font-size: 36px;
+  font-family: "darkline", serif;
+}
+
+#pills-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.nav-pills .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 2rem;
+  color: var(--text-color);
+}
+.nav-pills .nav-item .nav-link.active {
+  background-color: var(--main-color) !important;
+  transition: background-color 0.3s ease;
+}
+
+.services-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 18rem;
+  text-align: center;
+  color: var(--text-color);
+  border: none;
+}
+.services-container .card .card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.services-container .card .card-body p {
+  font-size: 0.9rem;
+}
+
+.services-container .card .card-body a box-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -35px;
+  left: 110px;
+  padding: 5px;
+  padding-left: 8px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.mySwiper {
+  height: 500px;
+}
+
+/* ========== OUT TEAM SECTION CSS ============= */
+
+.team-container .team-info {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 2rem 4rem;
+}
+
+.team-container .team-info .vertical-line {
+  width: 3px;
+  height: 60%;
+  background: #fff;
+}
+
+.team-container .team-info img {
+  max-width: 70px;
+}
+
+.team-container .team-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.team-container .team-info .reward-container,
+.team-container .team-info .person-container,
+.team-container .team-info .report-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.our-team {
+  width: 100%;
+  height: 550px !important;
+  height: auto;
+  background-color: #fff;
+}
+
+.our-team .mySwiper {
+  height: 100%;
+}
+
+.our-team .team-title {
+  width: 100%;
+  font-family: "darkline", serif;
+}
+
+.our-team .swiper-slide .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  text-align: center;
+  color: var(--text-color);
+  border: none;
+  padding-bottom: 5px;
+}
+
+.our-team .swiper-slide .card .card-title {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.our-team .swiper-slide .card .team-card-btn {
+  background: var(--team-button-color);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+}
+
+/* ========== ABOUT SECTION ============ */
+
+.about-container {
+  width: 100%;
+  height: auto;
+  background: var(--about-bg-color);
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-container .about-title h2 {
+  font-family: "darkline", serif;
+}
+
+.about-content img {
+  width: 50%;
+}
+
+.about-content .about-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
-  .bg-body-tertiary {
+  /* navbar css */
+  .navbar {
     background-color: #fff !important;
+  }
+
+  .navbar.open {
+    height: 80vh;
+    overflow: scroll;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-self: flex-start;
   }
 
   .navbar-collapse {
@@ -312,9 +493,9 @@ ul {
   .dropdown-menu .dropdown-item i {
     display: none;
   }
-
+  /* home section */
   .carousel-item .home-description {
-    padding: 10px 0;
+    bottom: -40px;
   }
 
   .carousel-item .home-description h1 {
@@ -324,16 +505,197 @@ ul {
   .carousel-item .home-description p {
     font-size: 0.75rem;
   }
+
+  /* Our Services */
+  #pills-tab {
+    gap: 3rem;
+  }
+
+  .services-container .card {
+    padding: 0.5rem;
+    width: 12rem;
+    height: auto;
+  }
+
+  .services-container .card .card-body {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .services-container .card .card-body .card-title {
+    font-size: 1rem;
+  }
+  .services-container .card .card-body p {
+    font-size: 0.7rem;
+  }
+
+  .services-container .card .card-body a box-icon {
+    width: 30px;
+    height: 30px;
+    bottom: -25px;
+    left: 70px;
+  }
+
+  .mySwiper {
+    height: 350px;
+  }
+
+  /* Team info section */
+  .team-container .team-info {
+    height: 250px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .team-container .team-info img {
+    max-width: 50px;
+  }
+  .team-container .team-info h2 {
+    font-size: 1rem;
+  }
+  .team-container .team-info .reward-container,
+  .team-container .team-info .person-container,
+  .team-container .team-info .report-container {
+    gap: 1rem;
+  }
+
+  .our-team {
+    height: 400px !important;
+  }
+
+  .our-team .swiper-slide .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    text-align: center;
+    color: var(--text-color);
+    border: none;
+    padding-bottom: 5px;
+  }
+
+  .our-team .swiper-slide .card-img-top {
+    width: 70%;
+  }
+
+  .our-team .swiper-slide .card .card-title {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+  .our-team .swiper-slide .card .team-card-btn {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 0.2rem 1.5rem;
+  }
+
+  /* About Us Section */
+  .about-content .about-text {
+    font-size: 0.8rem;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-  .navbar-nav {
+@media screen and (max-width: 768px) {
+  /* Services Title */
+  .services-container .title-wrapper h3 {
+    text-align: center;
+  }
+  .our-team .team-title {
+    text-align: center;
+  }
+  /* AboutUs Section */
+  .about-container .about-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about-container .container-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
     gap: 1rem;
+  }
+
+  .about-content img {
+    width: 90%;
+  }
+
+  .about-content .about-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-item .home-description {
+    width: 90vw;
+  }
+
+  .carousel-item .home-description h1 {
+    font-size: 0.7rem;
+  }
+
+  .carousel-item .home-description p {
+    font-size: 0.5rem;
+  }
+
+  /* Our Services */
+
+  .nav-pills {
+    gap: 1rem !important;
+  }
+
+  .nav-pills .nav-item .nav-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 1rem;
+    color: var(--text-color);
+  }
+
+  .services-container {
+    padding: 1rem;
+  }
+
+  .services-container .title-wrapper h3 {
+    font-size: 25px;
+  }
+  /* Team info section */
+  .team-container .team-info {
+    height: 200px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .team-container .team-info img {
+    max-width: 30px;
+  }
+  .team-container .team-info h2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .team-container .team-info .reward-container,
+  .team-container .team-info .person-container,
+  .team-container .team-info .report-container {
+    gap: 0.5rem;
   }
 }
 
 @media screen and (min-width: 992px) {
+  /* navbar */
   .dropdown-menu.show {
     display: flex !important;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .page-container,
+  .fixed-header {
+    max-width: 1800px;
+    margin: auto;
   }
 }
