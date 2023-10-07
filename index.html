@@ -123,7 +123,7 @@
         </header>
 
         <!-- HOME SECTION -->
-        <div class="home-items">
+        <section class="home-items">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -135,9 +135,9 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/Home/thumbnail_2.jpg" alt="home-img">
+                        <img src="assets/img/Home/thumbnail_2.png" alt="home-img">
                         <div class="home-description">
-                            <h1>UZMAN KADROMUZ İLE HİZMETİNİZDEYİZ</h1>
+                            <h1>TEKNOLOJİYİ SAĞLIKLA BULUŞTURUYORUZ</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere!</p>
                         </div>
                     </div>
@@ -161,11 +161,11 @@
                 </button>
             </div>
 
-        </div>
+        </section>
         <!-- OUT SERVICES SECTION -->
         <section class="services-container">
-            <div class="title-wrapper">
-                <h3>Hizmetlerimiz</h3>
+            <div class="section-title">
+                Hizmetlerimiz
             </div>
             <div class="services-slider">
                 <ul class="nav-pills mb-3" id="pills-tab" role="tablist">
@@ -192,8 +192,8 @@
                     <!-- Services Face Section -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
+                        <div class="swiper servicesSwiper">
+                            <div class="swiper-wrapper servicesWrap">
 
                                 <div class="swiper-slide">
                                     <div class="card">
@@ -277,8 +277,8 @@
                     <!-- Services Breast Section -->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
                         tabindex="0">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
+                        <div class="swiper servicesSwiper">
+                            <div class="swiper-wrapper servicesWrap">
 
                                 <div class="swiper-slide">
                                     <div class="card">
@@ -346,8 +346,8 @@
                     <!-- Services Body Section -->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
                         tabindex="0">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
+                        <div class="swiper servicesSwiper">
+                            <div class="swiper-wrapper servicesWrap">
 
                                 <div class="swiper-slide">
                                     <div class="card">
@@ -431,10 +431,9 @@
                 </div>
             </div>
             <div class="our-team container-lg pt-4">
-                <h2 class="team-title">Ekibimiz</h2>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-
+                <div class="team-title section-title">Ekibimiz</div>
+                <div class="swiper teamSwiper">
+                    <div class="swiper-wrapper teamWrap">
                         <div class="swiper-slide">
                             <div class="card">
                                 <img class="card-img-top" src="assets/img/Team/team.png" alt="Card image cap">
@@ -470,16 +469,16 @@
                         </div>
 
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination" style="bottom: -5px;"></div>
                 </div>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="about-container container-fluid mt-5">
+        <section class="about-container container-fluid">
             <div class="container-lg p-4">
-                <div class="about-title">
-                    <h2>Biz Kimiz</h2>
+                <div class="section-title">
+                    Biz Kimiz
                 </div>
                 <div class="about-content mt-2">
                     <img src="assets/img/About/about-img.png" alt="about-img">
@@ -503,6 +502,298 @@
                 </div>
             </div>
         </section>
+
+        <!-- BLOG SECTION -->
+        <section class="blog-container container-fluid">
+            <div class="container-lg p-4">
+                <div class="section-title">Güncel Yazılar</div>
+
+                <div class="swiper blogVerticalSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-wrap">
+                            <!-- inner swiper start -->
+
+                            <div class="swiper blogHorizontalSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- inner swiper finish -->
+                        </div>
+                        <div class="swiper-slide swiper-wrap">
+                            <div class="swiper blogHorizontalSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-wrap">
+                            <div class="swiper blogHorizontalSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-wrap">
+                                        <div class="card blog-card">
+                                            <img class="card-img-top" src="assets/img/Blog/blog-img-1.png"
+                                                alt="Card image cap" style="width: 100%; height: 200px;">
+                                            <div class="card-body">
+                                                <div class="card-left">
+                                                    <h5 class="card-title">Yüz Germe</h5>
+                                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Laudantium sequi facilis cum omnis molestiae! Id.</p>
+                                                    <a href="#">Devamını oku >></a>
+                                                </div>
+                                                <span class="vertical-line"></span>
+                                                <div class="card-right">
+                                                    <box-icon name='message-rounded-detail'
+                                                        style=" transform: scaleX(-1)"></box-icon>
+                                                    <p>2 Yorum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination verticalSwiperPagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / APPOINTMENT SECTION -->
+        <section class="contact-container container-fluid">
+            <div class="container-lg p-4">
+                <div class="contact-items">
+                    <img src="assets/img/Contact/thumb-1.png" alt="contact-image" class="contact-img">
+                    <div class="contact-inner">
+                        <h2 class="contact-title">PROFESYONEL EKİBİMİZLE HİZMETİNİZDEYİZ</h2>
+                        <p class="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                            repellat hic maxime
+                            accusamus, veritatis minima soluta itaque consequatur eaque optio?</p>
+                        <button class="contact-btn">RANDEVU AL</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="footer-container container-lg">
+                <div class="footer-aboutUs">
+                    <h6>HAKKIMIZDA</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit inventore nam neque dicta
+                        et similique, modi animi fugit quia, illum deserunt.</p>
+                </div>
+                <div class="footer-address">
+                    <div class="address">
+                        <i class="ri-map-pin-line"></i>
+                        <p>Zeytinlik Mah. Türkçü Sok. Ferah Palas <br>
+                            Apartman A Blok No:16 Daire:9 Kat:4 <br>
+                            Bakırköy / İSTANBUL</p>
+                    </div>
+                    <div class="phone">
+                        <i class="ri-phone-fill"></i>
+                        <p>
+                            +90 535 12345 67<br>
+                            +90 535 12345 67
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <i class="ri-mail-line"></i>
+                        <p>
+                            bilgi@dentalcare.com<br>
+                            info@dentalcare.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-news">
+                    <h6>E-BÜLTEN</h6>
+                    <p>Haftalık haberler ve güncellemeler için kaydolun</p>
+                    <form>
+                        <label>E-mail</label>
+                        <input type="text">
+                        <box-icon name='chevrons-right' size="md" color="#4d4b4b"></box-icon>
+                    </form>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

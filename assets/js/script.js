@@ -1,3 +1,4 @@
+// arama çubuğu tıklandığı zaman açılıp kapatılmasını sağladım.
 const magnifier = document.getElementById("magnifier");
 const inputBox = document.getElementById("search-input");
 
@@ -18,7 +19,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Hamburger menü açıldığı zaman menüye bir class eklemek için açık kapalı olma durumunu izledim. Menü açıkken sayfayı kaplasın ve scroll çıksın istiyorum.
+// Hamburger menü açık veya kapalı durumuna göre class ekleyip çıkardım. Menü açıkken sayfayı kaplasın ve scroll çıksın istiyorum.
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar");
 
@@ -30,7 +31,63 @@ navbarToggler.addEventListener("click", () => {
   }
 });
 
-var swiper = new Swiper(".mySwiper", {
+//* Swiper JS Slider Ayarları ===== >>
+
+var swiper = new Swiper(".servicesSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
+var swiper = new Swiper(".teamSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
+var swiper = new Swiper(".blogVerticalSwiper", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper = new Swiper(".blogHorizontalSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
