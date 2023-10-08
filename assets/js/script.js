@@ -90,10 +90,6 @@ var swiper = new Swiper(".blogVerticalSwiper", {
 var swiper = new Swiper(".blogHorizontalSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     0: {
       slidesPerView: 1,
