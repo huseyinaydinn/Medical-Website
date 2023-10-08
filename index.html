@@ -124,44 +124,36 @@
         </header>
 
         <!-- HOME SECTION -->
+        <!-- Slider devre dışı sadece otomatik geçiş açık. Kullanıcı rahatça sayfayı aşağı kaydırması için.-->
         <section class="home-items">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/img/Home/thumnail.png" alt="home-img">
+            <div class="swiper homeSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide home-slide">
+                        <img src="assets/img/Home/thumnail.png" alt="home-image">
                         <div class="home-description">
                             <h1>GÜZELLİĞİN KALBİNE HOŞGELDİNİZ</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ducimus aliquam
                                 dignissimos?</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/Home/thumbnail_2.png" alt="home-img">
+                    <div class="swiper-slide home-slide">
+                        <img src="assets/img/Home/thumbnail_2.png" alt="home-image">
                         <div class="home-description">
                             <h1>TEKNOLOJİYİ SAĞLIKLA BULUŞTURUYORUZ</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere!</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/Home/thumbnail_3.jpg" alt="home-img">
+
+                    <div class="swiper-slide home-slide">
+                        <img src="assets/img/Home/thumbnail_3.jpg" alt="home-image">
                         <div class="home-description">
                             <h1>UZMAN KADROMUZ İLE HİZMETİNİZDEYİZ</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere!</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="swiper-pagination"></div>
             </div>
-
         </section>
         <!-- OUT SERVICES SECTION -->
         <section class="services-container pt-0 pl-5">

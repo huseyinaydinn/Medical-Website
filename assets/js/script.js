@@ -33,6 +33,20 @@ navbarToggler.addEventListener("click", () => {
 
 //* Swiper JS Slider Ayarları ===== >>
 
+var homeswiper = new Swiper(".homeSwiper", {
+  direction: "vertical",
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+homeswiper.detachEvents(); // Kullanıcılar Anasayfada rahatça gezinebilsinler diye Anasayfadaki Geçişi elle kontolü kapattım. Sadece otomatik geçiş.
+
 var swiper = new Swiper(".servicesSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -87,9 +101,10 @@ var swiper = new Swiper(".blogVerticalSwiper", {
   },
 });
 
-var swiper = new Swiper(".blogHorizontalSwiper", {
+var swiper2 = new Swiper(".blogHorizontalSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  allowSlideNext: false,
   breakpoints: {
     0: {
       slidesPerView: 1,

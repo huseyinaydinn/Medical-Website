@@ -250,7 +250,21 @@ ul {
   background-color: #fff;
 }
 
-.home-items .carousel-inner .carousel-item img {
+.homeSwiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-slide img {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -258,34 +272,6 @@ ul {
   padding-bottom: 4rem;
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
-}
-
-#carouselExampleSlidesOnly {
-  margin-top: 1.5rem;
-  width: 100%;
-  height: 100vh;
-}
-
-.home-items .carousel-inner .carousel-item {
-  width: 100%;
-  height: 100vh;
-}
-
-.home-items .carousel-inner {
-  position: relative;
-}
-
-.home-items .carousel-control-prev-icon,
-.home-items .carousel-control-next-icon {
-  position: absolute;
-}
-
-.home-items .carousel-control-next-icon {
-  right: 40px;
-}
-
-.home-items .carousel-control-prev-icon {
-  left: 40px;
 }
 
 .home-description {
@@ -815,16 +801,17 @@ label {
   .dropdown-menu .dropdown-item i {
     display: none;
   }
+
   /* home section */
-  .carousel-item .home-description {
+  .home-description {
     bottom: -40px;
   }
 
-  .carousel-item .home-description h1 {
+  .home-description h1 {
     font-size: 1rem;
   }
 
-  .carousel-item .home-description p {
+  .home-description p {
     font-size: 0.75rem;
   }
 
@@ -995,18 +982,18 @@ label {
 }
 
 @media screen and (max-width: 576px) {
-  .carousel-item .home-description {
+  /* Home Section */
+  .home-description {
     width: 90vw;
   }
 
-  .carousel-item .home-description h1 {
+  .home-description h1 {
     font-size: 0.7rem;
   }
 
-  .carousel-item .home-description p {
+  .home-description p {
     font-size: 0.5rem;
   }
-
   /* Our Services */
 
   .nav-pills {
