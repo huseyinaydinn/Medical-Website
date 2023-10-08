@@ -32,7 +32,6 @@ navbarToggler.addEventListener("click", () => {
 });
 
 //* Swiper JS Slider Ayarları ===== >>
-// Kullanıcılar Anasayfada rahatça gezinebilsinler diye Anasayfadaki Geçişi elle kontolü kapattım. Sadece otomatik geçiş.
 var homeswiper = new Swiper(".homeSwiper", {
   autoplay: {
     delay: 2000,
