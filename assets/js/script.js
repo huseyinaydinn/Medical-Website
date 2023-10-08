@@ -32,20 +32,22 @@ navbarToggler.addEventListener("click", () => {
 });
 
 //* Swiper JS Slider Ayarları ===== >>
-
+// Kullanıcılar Anasayfada rahatça gezinebilsinler diye Anasayfadaki Geçişi elle kontolü kapattım. Sadece otomatik geçiş.
 var homeswiper = new Swiper(".homeSwiper", {
-  direction: "vertical",
   autoplay: {
     delay: 2000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-homeswiper.detachEvents(); // Kullanıcılar Anasayfada rahatça gezinebilsinler diye Anasayfadaki Geçişi elle kontolü kapattım. Sadece otomatik geçiş.
 
 var swiper = new Swiper(".servicesSwiper", {
   slidesPerView: 3,
